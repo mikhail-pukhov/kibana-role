@@ -1,8 +1,5 @@
 ---
 # tasks file for kibana-role
-- name: Install kibana
-    hosts: kibana
-    tasks:
       - name: Upload tar.gz kibana from remote URL
         get_url:
           url: "https://artifacts.elastic.co/downloads/kibana/kibana-{{ kibana_version }}-linux-x86_64.tar.gz"
